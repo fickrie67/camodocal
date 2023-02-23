@@ -90,8 +90,8 @@ Build Instructions for Ubuntu
 * GTest
 * OpenMP
 
-*Additional:*
-*ceres-solver
+*Additional*
+* Ceres-solver
         
         # CMake
         sudo apt-get install cmake
