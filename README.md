@@ -90,6 +90,30 @@ Build Instructions for Ubuntu
 * GTest
 * OpenMP
 
+additional:
+ceres-solver
+        # CMake
+        sudo apt-get install cmake
+        # google-glog + gflags
+        sudo apt-get install libgoogle-glog-dev libgflags-dev
+        # Use ATLAS for BLAS & LAPACK
+        sudo apt-get install libatlas-base-dev
+        # Eigen3
+        sudo apt-get install libeigen3-dev
+        # SuiteSparse (optional)
+        sudo apt-get install libsuitesparse-dev
+        
+        cd ~
+        wget ceres-solver.org/ceres-solver-1.14.0.tar.gz
+        tar -xvf ceres-solver-1.14.0.tar.gz
+        mkdir ceres-bin
+        cd ceres-bin
+        
+        cmake ../ceres-solver-1.14.0
+        make -j3
+        make test
+        sudo make install
+
 1. Before you compile the repository code, you need to install the required
    dependencies, and install the optional dependencies if required.
    Download the SuiteSparse libraries from this [link] [1] and
