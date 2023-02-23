@@ -92,6 +92,7 @@ Build Instructions for Ubuntu
 
 additional:
 ceres-solver
+        
         # CMake
         sudo apt-get install cmake
         # google-glog + gflags
