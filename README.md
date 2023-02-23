@@ -123,6 +123,8 @@ Build Instructions for Ubuntu
 
 2. Build the code.
 
+        git clone 'https://github.com/fickrie67/camodocal.git'
+        cd camodocal
         mkdir build
         cd build
         cmake -DCMAKE_BUILD_TYPE=Release ..
